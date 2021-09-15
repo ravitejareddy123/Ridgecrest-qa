@@ -38,9 +38,10 @@ jobs:
                              Kh9BmUqeS2YxN/6V9/X4fTx+dhs5q5TEVK92yIQP80nMLGzYcAAACBAOCvBgDAfHc/grn7
                              YIKHyzESQyxQetstJi0LbKrPKnTzHEEobmvaQqAbKHTKudrDsebX8rt+ndFOSFCjYBkPJT
                              WX2J29P9eTaNtSnvcWfaK8AQFu5llqw5Y4m46XXQ4o639O/arCyPdOFIK0KI/N1ODWngrp
-                             eTBG7TktbeGU8WZjAAAAFWFkbWluQGlwLTE3Mi0zMS0zMC0yNAECAwQF }}
+                             eTBG7TktbeGU8WZjAAAAFWFkbWluQGlwLTE3Mi0zMS0zMC0yNAECAwQF 
 
-          SOURCE: "./"
+          SOURCE: "dist/"
           REMOTE_HOST: "ec2-3-128-160-46.us-east-2.compute.amazonaws.com"
           REMOTE_USER: "admin"
           TARGET: "/home/root/ravi"
+          EXCLUDE: "/dist/"
