@@ -14,7 +14,33 @@ jobs:
       - name: Deploy to my EC2 instance
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
-          SSH_PRIVATE_KEY: ${{ "Ohio.pem" }}
+          SSH_PRIVATE_KEY: ${{ -----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAgRkpHCqgyBW6r413JMTm0EQXlJJI6YUaUGOVwDmR7i0I5/AL
+ilSqvzp1ikbffispypDb+hdADOnlz/IpwWKFidLvFa1rVuA+BqlYS/sdv8lrZHWV
+/3V14+9I1SUeIeQogdqSTPCmEwNCuvzcEJoIT0UgWoAjgqtKiqAeExjNkB2A+c7m
+0T10NOlw3IUB1ni6ZvXiezxbWLFSblfF6PFitjkiyCQLibzHELLpVuBz0yejHcRQ
+wbjZIJl1KMal3Xj25XkBjiWD5voTh/t+RZL44GE9Jmnbva8n+y/oi9A51mzq6NpZ
+pjQ83f1w03uA3ICHUF8fZIdAJ6rpdQkLs0hE2wIDAQABAoIBAD2NUIOEc5pSeesf
+yPG4C9C61n9Y6/ijJLO1d33qNQDZagij8+ylh6+bYNVoC0EttURGowtvsHM3xgHK
+lUwF/GOFNcchIy+NxSUJ8vZvKXT6xQBl6/mb+HSP7yrpAp/oF8QqAV071AL2qAdd
+blNgDZw1+kIMHGI951GHHC/AwKn4IvM7B2Yvo2bNZIGCh30r39GpSxpeXFtvLfrz
+z+z8r/LHJX7mvb3+WlsUeKrJvazTx2gLDll5V5170WioS9JiDHtknJXCILkKYS+S
+Esq7SQKsZJLYu9wXK7/lkZyN81EvvUVix8ZqNeIQ3bclTUXS5C1pgpvyH+lWHbm5
+W8d01iECgYEA8OuQgaHIdoUevYrTc1toUWYAJQVNj19d8wH53xYTQaJHTXzQDl/c
+PmKHcEK3xqX8KbmPgyyqYers7xMZH4otrIe2eY/Lnn4d0ZuPI5/LzuZYS07BSpcy
+zbVQUS5wOjf08lpZAFX8Jysx8mi9iIYc/maSkh+KpDa5a1IOXQmB18sCgYEAiS3L
+WNQyflWbd24+wl47D9hv/qlhM/3A6kPv5ep7g18DrtpyKF3HEV+aN4jJviv8gMZL
+cdfhIETs4x45rtdhF7TlyPN9aG1hyB0T/e5wbdZ/4JpTIpDHWcfj68xwo5znQguA
+j6FDImc11oWnvVcVdzsS88g2edjjmv4xY7vFBTECgYEAtBeDOEQVs/Mi3ZFPK2Zi
+/qX+6a2jIs+pTSRnAspfrqp+HoB0jqo92yyQDezxr78YVqBtlSLoYrXYU4a1Owxx
+xAzW7Nv+3AVuiOd+AqVLFui9i93dQ8LuqTMmTOkn331Az4GWElg0W5tAhPKi69FF
+Dy7h1fVaEBMQXBdEwWt/8i0CgYAfKsJqujuGrJiX9/pWWuZ8YSaA66bkEyFDmI/m
+4vGRFYNWtNb/CN9zuQ7m0zNS+9dwwpzdjrjdhgt0RqfAa7rpkfYrQ/cYRNHUj5a9
+OPFeYz/GngmJbu98HIhSSK7G3Z1FSiu5dmA0btKynMdRo3mDD27s6G5IHNkJm/tI
+t5654QKBgBVSEQY66MacoyT//RXrjZi4qDBi2Tl8QgcMYkegeyJf26paiBw0cI2Z
+iRuW7NDJbk1cLzMEsbypT1PGGUMUTVoXACMbTcR7WA1lFgVcdYAUCK1KaPq1g2r9
+CMJTiwr2ig7z1ao/G4Hhreq6VWpIDR10wBiznOeLU0OvxYvYHEX7
+-----END RSA PRIVATE KEY-----}}
           SOURCE: "./"
           REMOTE_HOST: "ec2-3-128-160-46.us-east-2.compute.amazonaws.com"
           REMOTE_USER: "admin"
