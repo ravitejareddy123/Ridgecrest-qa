@@ -14,7 +14,7 @@ jobs:
       - name: Deploy to my EC2 instance
         uses: easingthemes/ssh-deploy@main
         env:
-          SSH_PRIVATE_KEY: $ b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
+          SSH_PRIVATE_KEY: $ {{b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
                              NhAAAAAwEAAQAAAQEA28tbv0FOE+4iqJTGf4ZDEaAVwj7uoEtItE9sDx17XSsHB3s0Eeei
                              N9QpOlnjraRlzSoG0W9XW/uFXbORy7hlBFaijBKJuKgjkkVLjPZHustIrzTtlpAJzGQWJo
                              azCPCXUG2RgH/zkWD8TujyBnHyky3JhmtBmGVxCQC0r4ghsIB0j8YLYbjsiT02c6WPoacX
@@ -38,7 +38,7 @@ jobs:
                              Kh9BmUqeS2YxN/6V9/X4fTx+dhs5q5TEVK92yIQP80nMLGzYcAAACBAOCvBgDAfHc/grn7
                              YIKHyzESQyxQetstJi0LbKrPKnTzHEEobmvaQqAbKHTKudrDsebX8rt+ndFOSFCjYBkPJT
                              WX2J29P9eTaNtSnvcWfaK8AQFu5llqw5Y4m46XXQ4o639O/arCyPdOFIK0KI/N1ODWngrp
-                             eTBG7TktbeGU8WZjAAAAFWFkbWluQGlwLTE3Mi0zMS0zMC0yNAECAwQF 
+                             eTBG7TktbeGU8WZjAAAAFWFkbWluQGlwLTE3Mi0zMS0zMC0yNAECAwQF}} 
 
           SOURCE: "./"
           ARGS: "-rltgoDzvO"
