@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Deploy to my EC2 instance
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: $ b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
                              NhAAAAAwEAAQAAAQEA28tbv0FOE+4iqJTGf4ZDEaAVwj7uoEtItE9sDx17XSsHB3s0Eeei
