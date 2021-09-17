@@ -19,5 +19,11 @@ jobs:
             sudo apt-get update -y
             cd ridgecrest/moqui-framework
             ./gradlew getRuntime
-            cd runtime/components
+            cd runtime
+            mkdir elasticsearch
+            mkdir log
+            mkdir txlog
+            cd component
+            git clone https://github.com/tailorsoft/ridgecrest.git
+            git clone https://github.com/tailorsoft/mantle-shopify.git
       
