@@ -17,13 +17,10 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             sudo apt-get update -y
-            cd ridgecrest/moqui-framework
-            ./gradlew getRuntime
-            cd runtime
-            mkdir elasticsearch
-            mkdir log
-            mkdir txlog
-            cd component
-            git clone https://github.com/tailorsoft/ridgecrest.git
-            git clone https://github.com/tailorsoft/mantle-shopify.git
-      
+            sudo apt-get install docker.io -y
+            sudo docker pull ravteja1996/ravi:latest
+            cd ridgecrest/moqui-framework/docker
+            ./compose-up.sh moqui-ng-pg-compose.yml
+            
+            
+            
