@@ -17,9 +17,15 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             sudo apt-get update -y
-            sudo systemctl start docker
-            sudo docker pull raviteja1996/ravi
-            cd ridgecrest/moqui-framework/docker
+            cd ridgecrest/moqui-framework
+            sudo ./gradlew getDepends
+            sudo ./gradlew build
+            sudo ./gradlew cleanAll
+            sudo ./gradlew getRuntime
+            sudo ./gradlew addRuntime
+            cd docker/simple
+            sudo ./docker-build.sh ../.. raviteja1996/ravi
+            cd ../
             sudo ./compose-up.sh moqui-ng-pg-compose.yml
             sudo docker ps
             
