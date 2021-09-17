@@ -16,6 +16,9 @@ jobs:
           key: ${{ secrets.VM_SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            whoami
-            ls -al
+            mkdir ridgecrest
+            cd ridgecrest
+            git clone https://github.com/moqui/moqui-framework.git
+            cd moqui
+            ./gradlew getRuntime
       
