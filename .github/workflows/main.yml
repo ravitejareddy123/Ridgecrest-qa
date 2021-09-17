@@ -18,10 +18,8 @@ jobs:
           script: |
             sudo apt-get update -y
             cd ridgecrest/moqui-framework
-            sudo ./gradlew getRuntime
             sudo ./gradlew getDepends
             sudo ./gradlew cleanAll
-            sudo ./gradlew gitPullAll
             sudo ./gradlew build
             sudo ./gradlew cleanAll
             sudo ./gradlew addRuntime
