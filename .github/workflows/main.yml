@@ -16,6 +16,8 @@ jobs:
           key: ${{ secrets.VM_SSH_KEY }}
           port: ${{ secrets.PORT }}
           script: |
+            sudo apt-get update -y
+            sudo apt-get install openjdk-8-jdk
             cd ridgecrest/moqui-framework
             ./gradlew getRuntime
       
