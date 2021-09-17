@@ -20,7 +20,7 @@ jobs:
             sudo systemctl start docker
             sudo docker pull raviteja1996/ravi
             cd ridgecrest/moqui-framework/docker
-            sudo ./compose-up.sh moqui-ng-pg-compose.yml
+            sudo docker-compose up -d moqui-ng-pg-compose.yml
             
             
             
