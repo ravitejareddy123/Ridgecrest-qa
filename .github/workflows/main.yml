@@ -17,7 +17,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             sudo apt-get update -y
-            sudo apt-get install openjdk-11-jdk
             cd ridgecrest/moqui-framework
             ./gradlew getRuntime
+            cd runtime/components
       
